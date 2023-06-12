@@ -1,0 +1,37 @@
+{
+    "name": "palzin-apm/palzin-slim",
+    "description": "Real-Time monitoring Slim package using Palzin Monitor (APM).",
+    "keywords": ["palzin", "slim", "monitoring", "php"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Palzin Team",
+            "email": "hello@palzin.app"
+        }
+    ],
+    "require": {
+        "php": ">=7.2",
+        "palzin-apm/palzin-php": "^23.03.08",
+        "psr/http-server-middleware": "^1.0",
+        "psr/container": "^1.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Palzin\\Slim\\": "src/"
+        }
+    },
+    "config": {
+        "preferred-install": "dist"
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "require-dev": {
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Palzin\\Slim\\Tests\\": "tests/"
+        }
+    },
+    "scripts": {
+    }
+}
